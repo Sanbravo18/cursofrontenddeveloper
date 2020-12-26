@@ -3,26 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ordenamiento</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>OOCSS</title>
 </head>
 <style>
-    body {
-        margin: 0px;
+    .globalwidth{ /* OOCSS css orientado  a objetos, globalwidth debe estar en todos y esta  */
+        width: 50%;
     }
-    header{
-        background-color: #21c08b; /* se pone el color de fondo */
-        width: 100%; /* Se define el ancho*/
-        height: 80px;
+    .header{/* esta solo se ejecuta en header */
+        background-color: greenyellow;
     }
-    header img { /* imagenes dentro de header */
-        width: 200px;
-        margin-top: 10px;
-        margin-left: 10px;
+    footer{/* esta solo se ejecuta en fooder */
+        background-color: yellow;
     }
 </style>
 <body>
-    <header>
-        <img src="https://raw.githubusercontent.com/platzi/PlatziVideo/feature/react/src/assets/static/logo-platzi-video-BW2.png" alt="">
-    </header>
+    <header class="header globalwidth">Header</header>
+    <footer class="footer globalwidth">Footer</footer>
 </body>
 </html>
