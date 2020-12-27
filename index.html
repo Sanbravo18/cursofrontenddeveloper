@@ -7,6 +7,7 @@
     <title>BEM</title>
 </head>
 <style>
+<<<<<<< HEAD
    
 </style>
 <body>
@@ -14,5 +15,20 @@
         <button class="header__button--red">RED</button>
         <button class="header__button--red">YELLOW</button>
     </header>
+=======
+    .globalwidth{ /* OOCSS css orientado  a objetos, globalwidth debe estar en todos y esta  */
+        width: 50%;
+    }
+    .header{/* esta solo se ejecuta en header */
+        background-color: greenyellow;
+    }
+    footer{/* esta solo se ejecuta en fooder */
+        background-color: yellow;
+    }
+</style>
+<body>
+    <header class="header globalwidth">Header</header>
+    <footer class="footer globalwidth">Footer</footer>
+>>>>>>> ad9cb833f82363b074cd2327c48265523bef6a53
 </body>
 </html>
