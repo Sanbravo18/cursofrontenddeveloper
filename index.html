@@ -4,21 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>OOCSS</title>
+    <title>BEM</title>
 </head>
 <style>
-    .globalwidth{ /* OOCSS css orientado  a objetos, globalwidth debe estar en todos y esta  */
-        width: 50%;
-    }
-    .header{/* esta solo se ejecuta en header */
-        background-color: greenyellow;
-    }
-    footer{/* esta solo se ejecuta en fooder */
-        background-color: yellow;
-    }
+   
 </style>
 <body>
-    <header class="header globalwidth">Header</header>
-    <footer class="footer globalwidth">Footer</footer>
+    <header class="header">
+        <button class="header__button--red">RED</button>
+        <button class="header__button--red">YELLOW</button>
+    </header>
 </body>
 </html>
