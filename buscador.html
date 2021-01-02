@@ -11,10 +11,10 @@
     body {
         margin: 0px;
         font-family: 'Mulish', sans-serif;
-        background-color: #ab88ff;
+        background-color: #8f57fd;
     }
     header{
-        background-color: #ab88ff; /* se pone el color de fondo */
+        background-color: #8f57fd; /* se pone el color de fondo */
         width: 100%; /* Se define el ancho*/
         height: 80px;
         display: flex;
@@ -51,10 +51,10 @@
     .header__menu li a:hover {
         text-decoration: underline;
     }
-    .header__menu--profile{
+    .header__menu--profile{ /* si le ponemos un width menor a la suma de los elementos que contien podriamos generar un error */
         margin-right: 8px;
         display: flex;
-        align-items: center;
+        align-items: center;        
     }
     .header__menu--profile img{
         margin-right: 8px;
@@ -63,6 +63,31 @@
     }
     .header__menu--profile p{
         margin: 0px;
+        color: white;
+    }
+
+    .main{
+        height: 300px;
+    }
+    .main__tittle {
+        color: white;
+        font-size: 25px;
+    }
+    .input {
+        background-color: rgba(255,255,255,0.1);
+        border: 2px solid white; /* el borde por defecto es gris */
+        border-radius: 30px;
+        color: white;
+        font-family: 'Mulish', sans-serif;
+        font-size: auto;
+        height: 50px;
+        padding: 0px 20px;
+        width: 70%;
+    }
+    textarea:focus, input:focus{
+    outline: none;
+}
+    ::placeholder{
         color: white;
     }
 </style>
@@ -80,5 +105,9 @@
             </ul>
         </div>
     </header>
+    <section class="main">
+        <h2 class="main__tittle">¿Que quieres ver hoy?</h2>
+        <input class="input" type="text" placeholder="Buscar...">
+    </section>
 </body>
 </html>
