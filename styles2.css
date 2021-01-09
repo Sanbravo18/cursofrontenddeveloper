@@ -1,0 +1,117 @@
+body {
+  margin: 0px;
+  font-family: 'Mulish', sans-serif;
+  background-color: #8f57fd;
+}
+header{
+  background-color: #8f57fd; /* se pone el color de fondo */
+  width: 100%; /* Se define el ancho*/
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__img { /* imagenes dentro de header */
+  width: 200px;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+.header__menu {
+  margin-right: 30px;
+}
+.header__menu ul {
+display: none;
+list-style: none; /* se quitan los puntitos de las listas */
+padding: 0px; 
+position: absolute;
+width: 100px;
+text-align: right;  /* alineacion de texto */
+margin: 0px 0px 0px -14px; 
+}
+.header__menu:hover ul, ul:hover {
+  display: block;
+}
+.header__menu li {
+  margin: 10px 0px;
+}
+.header__menu li a {
+  color: white;
+  text-decoration: none;
+}
+.header__menu li a:hover {
+  text-decoration: underline;
+}
+.header__menu--profile{ /* si le ponemos un width menor a la suma de los elementos que contien podriamos generar un error */
+  margin-right: 8px;
+  display: flex;
+  align-items: center;        
+}
+.header__menu--profile img{
+  margin-right: 8px;
+  width: 40px;
+  height: 40px;
+}
+.header__menu--profile p{
+  margin: 0px;
+  color: white;
+}
+
+.main{
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+.main__tittle {
+  color: white;
+  font-size: 25px;
+}
+.input {
+  background-color: rgba(255,255,255,0.1);
+  border: 2px solid white; /* el borde por defecto es gris */
+  border-radius: 30px;
+  color: white;
+  font-family: 'Mulish', sans-serif;
+  font-size: auto;
+  height: 50px;
+  padding: 0px 20px;
+  width: 70%;
+}
+textarea:focus, input:focus{
+outline: none;
+}
+::placeholder{
+  color: white;
+}
+
+
+.footer {
+  background-color:  #AB88FF;
+  display: flex;
+  align-items: center;
+  height: 100px;
+  width: 100%;
+}
+.footer a {
+  color: white;
+  cursor: pointer;
+  font-size: 14px;
+  padding-left:30px;
+  text-decoration: none;
+}
+footer a:hover{
+  text-decoration: underline;
+}
+@media only screen and (max-width:600px) {
+  .login__container{
+      background-color: transparent;
+      border: none;
+      padding: 0px;
+      width: 100%;
+  }
+  .footer {
+      align-items: center;
+      flex-direction: column;
+  }
+}
